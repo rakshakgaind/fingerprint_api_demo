@@ -5,8 +5,15 @@ import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import com.project.fingerprint.activity.MainActivity
 
-class AppLifecycleListener : DefaultLifecycleObserver {
+/**
+ * Application Lifecycle Observer
+ *
+ * helps to detect whether we need to show security screens
+ * like password, pin or fingerprint sensors
+ *
+ * */
 
+class AppLifecycleListener : DefaultLifecycleObserver {
 
     override fun onStart(owner: LifecycleOwner) {
         log("onStart")
@@ -41,7 +48,5 @@ class AppLifecycleListener : DefaultLifecycleObserver {
 
     private fun log(item: String) {
         Log.d("AppLifecycleListener", "$item ")
-
     }
-
 }

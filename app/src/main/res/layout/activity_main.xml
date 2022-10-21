@@ -20,8 +20,25 @@
             style="@style/Theme.Fingerprint.ToolbarStyle"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            app:menu="@menu/main_menu"
-            app:title="@string/contacts" />
+            app:title="@string/contacts" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -37,6 +54,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/app_bar_layout"
         tools:listitem="@layout/item_layout" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

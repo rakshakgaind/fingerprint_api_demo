@@ -16,4 +16,7 @@
     <string name="no_pin_password_set">No PIN, pattern or password set.</string>
     <string name="secure_contacts">Secured Contact</string>
     <string name="search">Search</string>
+    <string name="instruction_for_app_lock">To enable App Lock , click on toggle at the top</string>
+    <string name="_91234321423">+91234321423</string>
+    <string name="con_does_not_exist">Contact doesn\'t exist</string>
 </resources>
